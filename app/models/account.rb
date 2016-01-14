@@ -8,7 +8,7 @@ class Account < ActiveRecord::Base
 	# to create a valid Account. As you add validations to
 	# Account, be sure to adjust the attributes here as well.
 
-	describe "valid attributes" do
+	RSpec.describe "valid attributes" do
 		let(:valid_attributes) { { 
 			"shopify_account_url" => "MyString", 
 			"shopify_password" => "MyString",

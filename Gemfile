@@ -11,6 +11,7 @@ end
 # Use sqlite3 as the database for Active Record
 group :development, :test do
 	gem "sqlite3"
+	gem 'rb-fsevent' # used for Growl notifications
 	# Helpful gems
 	gem "better_errors" # improves error handling
 	gem "binding_of_caller" # used by better errors

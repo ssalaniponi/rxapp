@@ -1,4 +1,4 @@
-require 'rails_helper'
+require 'spec_helper'
 
 class Account < ActiveRecord::Base
 	validates_presence_of :shopify_account_url

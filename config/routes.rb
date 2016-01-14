@@ -1,4 +1,4 @@
-Contestapp::Application.routes.draw do
+Rxapp::Application.routes.draw do
   resources :accounts do
     member do
       get 'test_connection'

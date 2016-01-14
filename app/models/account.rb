@@ -1,4 +1,4 @@
-require 'spec_helper'
+require Rails.root.join('spec', 'spec_helper.rb').to_s
 
 class Account < ActiveRecord::Base
 	validates_presence_of :shopify_account_url

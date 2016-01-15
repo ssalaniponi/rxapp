@@ -1,4 +1,5 @@
-require Rails.root.join('spec', 'spec_helper.rb').to_s
+require Rails.root.join('spec', 'rails_helper.rb').to_s
+#require 'rails_helper'
 
 class Account < ActiveRecord::Base
 	validates_presence_of :shopify_account_url
@@ -10,7 +11,7 @@ class Account < ActiveRecord::Base
 	# to create a valid Account. As you add validations to
 	# Account, be sure to adjust the attributes here as well.
 
-	describe "valid attributes" do
+	RSpec.describe "valid attributes" do
 		let(:valid_attributes) { { 
 			"shopify_account_url" => "MyString", 
 			"shopify_password" => "MyString",

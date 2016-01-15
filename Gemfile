@@ -1,11 +1,12 @@
 source 'https://rubygems.org'
-
+  
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.3'
 ruby '2.3.0'
 group :production do
 	gem "rails_12factor"
 	gem "pg"
+	gem 'rspec-rails' # testing framework
 end
 
 # Use sqlite3 as the database for Active Record
